@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> CUSail | Fleet </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="../images/logos/boat.png" />
+  <link rel="stylesheet" href="../css/all.css">
+  <script defer src="../js/all.js"></script>
+  <link rel="stylesheet" href="../css/fleet.css">
+  <script defer src="../js/fleet.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav id="top-navbar">
+      <a href="../index.html">
+        <img id="top-navbar-logo" src="../images/logos/justbigword.png" alt="CUSail Word Logo">
+      </a>
+      <div id="navbar-links-container">
+        <a class="notOnThisPage" href="../index.html">About</a>
+        <a class="notOnThisPage" href="./ourteam.html">Our Team</a>
+        <a class="notOnThisPage" href="./recruitment.html">Recruitment</a>
+        <a class="onThisPage" href="./fleet.html">Fleet</a>
+        <a class="notOnThisPage" href="./sponsorship.html">Sponsorship</a>
+        <a class="notOnThisPage" href="./gallery.html">Gallery</a>
+        <a class="notOnThisPage" href="./contact.html">Contact Us</a>
+        <a class="notOnThisPage" href="./givingday.html">Giving Day</a>
+      </div>
+      <img id="hamburger-icon" class="navhidden" src="../images/icons/Hamburger.svg" alt="hamburger icon">
+    </nav>
+    <nav class="navhidden" id="mobile-top-navbar">
+      <div id="mobile-navbar-links-container">
+        <a class="notOnThisPage" href="../index.html">About</a>
+        <a class="notOnThisPage" href="./ourteam.html">Our Team</a>
+        <a class="notOnThisPage" href="./recruitment.html">Recruitment</a>
+        <a class="onThisPage" href="./fleet.html">Fleet</a>
+        <a class="notOnThisPage" href="./sponsorship.html">Sponsorship</a>
+        <a class="notOnThisPage" href="./gallery.html">Gallery</a>
+        <a class="notOnThisPage" href="./contact.html">Contact Us</a>
+        <a class="notOnThisPage" href="./givingday.html">Giving Day</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <h3 class="section-header">Previous Boat Design</h3>
+    <div id="boatfeatures">
+      <div class="leftcolumn">
+        <div class="feature-items designleft" onmouseover="changeImage('..\\images\\fleet\\MainTailSail.png')"
+          onmouseout="reset()">
+          <div class="outer">
+            <img class="icon inner top" id="sailicontop" src="../images/icons/wind-white.png" alt="Wind Icon">
+            <img class="icon inner bottom" id="sailiconbottom" src="../images/icons/wind-red.png" alt="Wind Icon">
+          </div>
+          <h5>Main Sail & Tail Sail</h5>
+          <p>
+            Our sail and tail sail designs are different than a normal sailboat in that they are rigid airfoils.
+            We make our sails out of balsa wood and cover them in monokote. The skeleton of the sail is made from
+            aluminum rods, and provides a frame for the sail as well as connecting the sail to the tail.
+          </p>
+        </div>
+
+        <div class="feature-items designleft" onmouseover="changeImage('..\\images\\fleet\\DeckHull.png')"
+          onmouseout="reset()">
+          <div class="outer">
+            <img class="icon inner top" id="sailicontop" src="../images/icons/boat-white.png" alt="White boat">
+            <img class="icon inner bottom" id="sailiconbottom" src="../images/icons/boat-red.png" alt="Red boat">
+          </div>
+          <h5>Deck & Hull</h5>
+          <p>
+            The deck and hull are made of carbon fiber and are designed to be extremely aero- and hydrodynamic.
+            The deck contains the hatches, which are a system designed to be easily removable while remaining completely
+            waterproof.
+          </p>
+        </div>
+
+        <div class="feature-items designleft" onmouseover="changeImage('..\\images\\fleet\\Lidar.png')"
+          onmouseout="reset()">
+          <div class="outer">
+            <img class="icon inner top" id="sailicontop" src="../images/icons/sensor-white.png" alt="White sensor">
+            <img class="icon inner bottom" id="sailiconbottom" src="../images/icons/sensor-red.png" alt="Red sensor">
+          </div>
+          <h5>LiDAR Sensor</h5>
+          <p>
+            The LiDAR sensor uses a concentrated beam of light to detect objects up to 100 meters away. Using motors, we
+            can move
+            the sensor rapidly to create a 3D map of the boat's surroundings. This is used for obstacle avoidance.
+          </p>
+        </div>
+      </div>
+
+      <div class="middlecolumn">
+        <img id="boatpicmain" src="../images/fleet/boat_diagram_outline.png" alt="Boatpic">
+      </div>
+
+      <div class="rightcolumn">
+        <div class="feature-items right" onmouseover="changeImage('..\\images\\fleet\\MotorControl.png')"
+          onmouseout="reset()">
+          <div class="outer">
+            <img class="icon inner top" id="sailicontop" src="../images/icons/gear-white.png" alt="White code">
+            <img class="icon inner bottom" id="sailiconbottom" src="../images/icons/gear-red.png" alt="Red code">
+          </div>
+          <h5>Motor Control</h5>
+          <p>
+            The motor control system includes all mechanical components inside the hull of the boat.
+            It acts as the structural support for the keel and the sail skeleton. It enables our navigation algorithm to
+            reliably turn the sail in response to the wind.
+          </p>
+        </div>
+        <div class="feature-items right" onmouseover="changeImage('..\\images\\fleet\\Ballast.png')"
+          onmouseout="reset()">
+          <div class="outer">
+            <img class="icon inner top" id="sailicontop" src="../images/icons/ballast-white.png" alt="White ballast">
+            <img class="icon inner bottom" id="sailiconbottom" src="../images/icons/ballast-red.png" alt="Red ballast">
+          </div>
+          <h5>Ballast</h5>
+          <p>
+            The ballast is the bulb at the bottom of the keel. It lowers the boat's center of gravity.
+            When wind causes the boat to tilt, the ballast provides a righting moment to bring the sailboat back to the
+            vertical position.
+          </p>
+        </div>
+        <div class="feature-items right" onmouseover="changeImage('..\\images\\fleet\\Tech.png')" onmouseout="reset()">
+          <div class="outer">
+            <img class="icon inner top" id="sailicontop" src="../images/icons/chip-white.png" alt="White chip">
+            <img class="icon inner bottom" id="sailiconbottom" src="../images/icons/chip-red.png" alt="Red chip">
+          </div>
+          <h5>Printed Circuit Board</h5>
+          <p>
+            We design our own PCB every year. The PCB is the heart of the electrical components of the boat. Our PCB
+            connects to 2 servo motors,
+            the LiDar sensor, the IMU, the GPS and XBEE, and the wind vane.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class=past-boats>
+      <h3>Our Fleet</h3>
+
+      <div class="past-boat-container">
+        <div class="left">
+          <img src="../images/fleet/salevane4.svg" alt="Sailvane 4">
+        </div>
+        <div class="right">
+          <h4>SailVane IV, "Felicia"</h4>
+          <h5>2018-2019</h5>
+          <br>
+          <p>SailVane IV was our second boat whose deck and hull exceed a meter in
+            length. SailVane IV had multiple removable sail skeleton mounts,
+            which was both more durable and optimized than SailVane III's removable sails.
+            SailVane IV also featured a 3-D printed mast step, brass ballast,
+            and stronger, sturdier keel.</p>
+        </div>
+      </div>
+
+      <div class="past-boat-container">
+        <div class="left">
+          <img src="../images/fleet/salevane3.svg" alt="Sailvane 3">
+        </div>
+        <div class="right">
+          <h4>SailVane III, "Fiona"</h4>
+          <h5>2017-2018</h5>
+          <br>
+          <p>SailVane III doubled in size to 2 meters to increase the boat's speed.
+            The boat also had increased modularity of parts and and better integration
+            with the navigation team. In this new design, the ballast and keel
+            could be removed for ease of transportation and freedom to change sizes or weights.
+            Both the main sail and tail could also be interchanged easily to reflect
+            the wind conditions.
+          </p>
+        </div>
+      </div>
+
+      <div class="past-boat-container">
+        <div class="left">
+          <img src="../images/fleet/salevane2.svg" alt="SailVane 2">
+        </div>
+        <div class="right">
+          <h4>SailVane II</h4>
+          <h5>2016-2017</h5>
+          <p>SailVane II was the product of CUSail's first year as a project team. For the first time, the deck, hull,
+            and keel
+            were made completely from carbon fiber opposed to fiber glass in order to decrease weight yet increase
+            strength.
+            <br><br>
+            A new system of rubber-mold and acrylic-channel hatches were implemented to both increase waterproofing
+            reliability and ease taking in and out the electronics boxes from inside the boat.
+            <br><br>
+            For the first time, a PixyCam was fixed to the front of the deck to give our boat vision and allow us to
+            detect buoys and avoid other sailboats.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="past-boat-container">
+        <div class="left">
+          <img src="../images/fleet/salevane1.svg" alt="Sailvane 1">
+        </div>
+        <div class="right">
+          <h4>SailVane I</h4>
+          <h5>2015-2016</h5>
+          <br>
+          <p>
+            SailVane I was the first boat created by CUSail. This sailboat successfully implemented
+            the idea to eliminate the need for a rudder by adding a second 'tail' sail.
+            <br><br>
+            Using a combination of sensors, such as GPS, inertial measurement unit, and a magnetic
+            rotary sensors, and a short term navigation algorithm, SailVane 1 was able to take its maiden voyage.
+            <br><br>
+            A microcontroller allows for communication between the sensor array, the navigation algorithm,
+            and the control system which communicates to servo motors that rotate the sail and tail to appropriate
+            angles.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <nav id="bottom-navbar">
+      <div id="bottom-navbar-container">
+        <div id="follow-us">
+          <p class="footer-heading">Follow Us</p>
+          <div class="media-links footer-text-container">
+            <!-- <a target="_blank" href="https://www.facebook.com/cusail/">
+              Facebook
+              <img id="facebook-icon" class="footer-icon" src="../images/icons/facebook.svg" alt="Facebook Icon">
+            </a> -->
+            <a target="_blank" href="https://www.instagram.com/cusail/">
+              Instagram
+              <img id="instagram-icon" class="footer-icon" src="../images/icons/instagram.svg" alt="Instagram Icon">
+            </a>
+            <!-- <a target="_blank" href="https://www.linkedin.com/company/cusail/">
+              LinkedIn
+              <img id="linkedin-icon" class="footer-icon" src="../images/icons/linkedin.svg" alt="LinkedIn Icon">
+            </a> -->
+            <a target="_blank" href="https://www.youtube.com/channel/UCYLMLKmgTJUMDos3ekQzPNg">
+              Youtube
+              <img id="youtube-icon" class="footer-icon" src="../images/icons/youtube.svg" alt="Youtube Icon">
+            </a>
+          </div>
+        </div>
+        <div id="contact-us">
+          <p id="contact-us-heading" class="footer-heading">Contact Us</p>
+          <div class="footer-text-container">
+            <p class="contact-us-subheader">General:</p>
+            <a target="_blank" href="mailto:cusail@cornell.edu">cusail@cornell.edu</a>
+            <p class="contact-us-subheader">Sponsorship Inquiry:</p>
+            <a target="_blank" href="mailto:cusail.sponsors@cornell.edu">cusail.sponsors@cornell.edu</a>
+          </div>
+        </div>
+      </div>
+      <a href="../index.html"><img id="footer-logo" src="../images/logos/footer-boat.png" alt="boat logo"></a>
+      <img id="waves-img" src="../images/icons/waves.png" alt="waves">
+    </nav>
+  </footer>
+</body>

@@ -1,0 +1,145 @@
+#page-header{
+  margin-top: 2em;
+}
+
+#donor-request{
+  width: 75%;
+  font-weight: normal;
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
+}
+
+#donor-description{
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-top: 2em;
+  max-width: 800px;
+}
+
+#donor-description a:hover{
+  color: black;
+}
+
+#button-container{
+  text-align: center;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 6em;
+}
+
+button{
+  width: 14em;
+  height: 3em;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 2px solid #B31B1B;
+  font-size: 18px;
+  font-weight: bold;
+  color: #B31B1B;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+button:hover{
+  background-color: #B31B1B;
+  color: white;
+}
+
+#donor-levels-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 6em;
+}
+
+.boat-text-container{
+  width: 235px;
+}
+
+.donor-box{
+  width: 175px;
+  margin: auto;
+  padding: 30px;
+}
+
+.donor-box:hover{
+  border: 2px solid #B31B1B;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.donor-box h4{
+  padding-left: 15px;
+}
+
+.donor-box h5{
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.hidden{
+  display: none;
+}
+
+.text-box{
+  background: url(../images/icons/bubble.svg);
+  background-size: cover;
+  height: 115px;
+  width: 250px;
+  padding-top: 2.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 1em;
+  position: relative;
+  right: 1.5em;
+}
+
+.text-box h5{
+  margin-bottom: .75em;
+}
+
+.donor-type-header{
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.logo-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.logo-container img{
+  width: 20em;
+  align-self: center;
+  margin: 1em;
+}
+
+#leddartech{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+#argoai{
+  width: 13em;
+}
+
+@media (max-width: 650px){
+
+#donor-levels-container{
+  flex-direction: column;
+  align-items: center;
+}
+
+
+main{
+  margin-bottom: 5em;
+}
+}
