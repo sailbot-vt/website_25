@@ -1,0 +1,76 @@
+#main-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+#getintouch{
+  width: 45%;
+  margin-left: 4em;
+  max-width: 800px;
+}
+
+#getintouch img{
+  width: 100%;
+  border: 1px solid black;
+}
+
+#getintouch p{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#contactus{
+  width: 30%;
+  margin-left: 6em;
+  max-width: 500px;
+}
+
+#contactus h5{
+  margin-top: 2em;
+}
+
+#contactus a:hover{
+  color: black;
+}
+
+#media-container{
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#media-container div{
+  align-self: center;
+  width: 18%;
+}
+
+#media-container img{
+  width: 70%;
+}
+
+@media (max-width: 700px){
+#main-container{
+  flex-direction: column;
+  align-items: center;
+}
+
+#getintouch{
+  width: 75%;
+  margin-left: 0em;
+}
+
+#contactus{
+  margin-top: 4em;
+  margin-left: 0em;
+  width: 75%;
+}
+
+main{
+  margin-bottom: 8em;
+}
+}
