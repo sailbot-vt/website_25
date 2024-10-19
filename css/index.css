@@ -3,7 +3,7 @@ main {
 }
 
 #hero-image{
-  background: url(../images/index/the-godfather.jpg);
+  background: url(/images/gallery/14.png);
   background-size: cover;
   height: 100vh;
 }
