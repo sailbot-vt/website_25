@@ -10,12 +10,13 @@ h3 {
     display: flex;
 }
 
-.left{
+.left {
     float: left;
     width: 50%;
     flex: 1;
     padding: 2%;
 }
+
 .left img {
     width: 100%;
 }
@@ -27,7 +28,7 @@ h3 {
     padding: 2%;
 }
 
-main{
+main {
     box-sizing: border-box;
 }
 
@@ -37,7 +38,8 @@ main{
     height: 100%;
 }
 
-.leftcolumn, .rightcolumn {
+.leftcolumn,
+.rightcolumn {
     width: 30%;
     float: left;
     margin-left: 2.5%;
@@ -78,7 +80,7 @@ main p {
     line-height: 20px;
 }
 
-#boatpicmain{
+#boatpicmain {
     vertical-align: middle;
     max-width: 100%;
     max-height: 100%;
@@ -92,7 +94,7 @@ main p {
 }
 
 
-.designleft{
+.designleft {
     text-align: right;
 }
 
@@ -103,7 +105,7 @@ main p {
 
 .icon {
     width: 15%;
-    transition:opacity 0.5s linear;
+    transition: opacity 0.5s linear;
 }
 
 .outer {
@@ -115,57 +117,179 @@ main p {
     z-index: 1;
 }
 
-@keyframes fadeaway
-{
-  0%   {opacity: 1;}
-  5%   {opacity: 0.95;}
-  10%   {opacity: 0.9;}
-  15%   {opacity: 0.85;}
-  20%   {opacity: 0.8;}
-  25%   {opacity: 0.75;}
-  30%   {opacity: 0.7;}
-  35%   {opacity: 0.65;}
-  40%   {opacity: 0.6;}
-  45%   {opacity: 0.55;}
-  50%   {opacity: 0.5;}
-  55%   {opacity: 0.45;}
-  60%   {opacity: 0.4;}
-  65%   {opacity: 0.35;}
-  70%   {opacity: 0.3;}
-  75%   {opacity: 0.25;}
-  80%   {opacity: 0.2;}
-  85%   {opacity: 0.15;}
-  90%   {opacity: 0.1;}
-  95%   {opacity: 0.05;}
-  100% {opacity: 0;}
+@keyframes fadeaway {
+    0% {
+        opacity: 1;
+    }
+
+    5% {
+        opacity: 0.95;
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    15% {
+        opacity: 0.85;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    25% {
+        opacity: 0.75;
+    }
+
+    30% {
+        opacity: 0.7;
+    }
+
+    35% {
+        opacity: 0.65;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    45% {
+        opacity: 0.55;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    55% {
+        opacity: 0.45;
+    }
+
+    60% {
+        opacity: 0.4;
+    }
+
+    65% {
+        opacity: 0.35;
+    }
+
+    70% {
+        opacity: 0.3;
+    }
+
+    75% {
+        opacity: 0.25;
+    }
+
+    80% {
+        opacity: 0.2;
+    }
+
+    85% {
+        opacity: 0.15;
+    }
+
+    90% {
+        opacity: 0.1;
+    }
+
+    95% {
+        opacity: 0.05;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-@keyframes fadein
-{
-  0%   {opacity: 0;}
-  5%   {opacity: 0.05;}
-  10%   {opacity: 0.1;}
-  15%   {opacity: 0.15;}
-  20%   {opacity: 0.2;}
-  25%   {opacity: 0.25;}
-  30%   {opacity: 0.3;}
-  35%   {opacity: 0.35;}
-  40%   {opacity: 0.4;}
-  45%   {opacity: 0.45;}
-  50%   {opacity: 0.5;}
-  55%   {opacity: 0.55;}
-  60%   {opacity: 0.6;}
-  65%   {opacity: 0.65;}
-  70%   {opacity: 0.7;}
-  75%   {opacity: 0.75;}
-  80%   {opacity: 0.8;}
-  85%   {opacity: 0.85;}
-  90%   {opacity: 0.9;}
-  95%   {opacity: 0.95;}
-  100% {opacity: 1;}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0.05;
+    }
+
+    10% {
+        opacity: 0.1;
+    }
+
+    15% {
+        opacity: 0.15;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    30% {
+        opacity: 0.3;
+    }
+
+    35% {
+        opacity: 0.35;
+    }
+
+    40% {
+        opacity: 0.4;
+    }
+
+    45% {
+        opacity: 0.45;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    55% {
+        opacity: 0.55;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    65% {
+        opacity: 0.65;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    85% {
+        opacity: 0.85;
+    }
+
+    90% {
+        opacity: 0.9;
+    }
+
+    95% {
+        opacity: 0.95;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-.feature-items:hover #sailicontop{
+.feature-items:hover #sailicontop {
     animation-name: fadeaway;
     animation-duration: 0.5s;
     opacity: 0;
@@ -177,30 +301,30 @@ main p {
     opacity: 1;
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
 
-.past-boat-container {
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
-}
+    .past-boat-container {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+    }
 
-.feature-items p {
-    font-size: 0;
+    .feature-items p {
+        font-size: 0;
 
-}
+    }
 
-.feature-items {
-    padding: 0px;
-}
+    .feature-items {
+        padding: 0px;
+    }
 
-.icon {
-    width: 50%;
-    transition:opacity 0.5s linear;
-}
+    .icon {
+        width: 50%;
+        transition: opacity 0.5s linear;
+    }
 
-main {
-    margin-bottom: 30%;
-}
+    main {
+        margin-bottom: 30%;
+    }
 
 }

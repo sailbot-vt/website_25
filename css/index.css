@@ -2,10 +2,23 @@ main {
   margin-top: 0em;
 }
 
-#hero-image{
+#hero-image {
   background: url(/images/gallery/14.png);
   background-size: cover;
   height: 100vh;
+}
+
+#hero-image h1 {
+  padding-top: 10vh;
+  padding-left: 4%;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hero-image h2 {
+  padding-left: 4%;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #videoDiv2 {
@@ -46,7 +59,7 @@ main {
   margin-top: 3em;
 }
 
-.section-desccription {
+.section-description {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
