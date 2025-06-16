@@ -15,3 +15,13 @@ hamburgerIcon.addEventListener('click', function(event){
        mobileIsDisplayed = true;
    }
 })
+
+// Handle navbar scroll effect
+const topNavbar = document.getElementById("top-navbar");
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        topNavbar.classList.add('navbar-scrolled');
+    } else {
+        topNavbar.classList.remove('navbar-scrolled');
+    }
+});

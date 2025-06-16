@@ -12,13 +12,11 @@ main {
   padding-top: 10vh;
   padding-left: 4%;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #hero-image h2 {
   padding-left: 4%;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #videoDiv2 {
@@ -47,12 +45,13 @@ main {
 }
 
 #title h1 {
-  padding-top: 10vh;
-  padding-left: 4%;
+  font-size: 80px;
+  padding-top: 20vh;
+  padding-left: 2%;
 }
 
 #title h2 {
-  padding-left: 4%;
+  padding-left: 30%;
 }
 
 #about-us-header {
@@ -184,6 +183,7 @@ main {
   }
 
   #title h1 {
+    text-align: center;
     padding: 0;
     font-size: 40px;
   }

@@ -5,7 +5,7 @@ body {
   min-height: 100vh;
   position: relative;
   padding-bottom: 50px;
-  background-image: url('../images/BackgroundGrid.svg');
+  background: linear-gradient(#f1f1f1 0%, #7caeff 80%);
 }
 
 main {
@@ -86,89 +86,105 @@ p {
 
 /* desktop top navbar */
 #top-navbar {
-  background-color: #F2F2F2;
-  height: 55px;
+  background: linear-gradient(to right, rgba(242, 242, 242, 0.95), rgba(242, 242, 242, 0.7));
+  height: 60px;
   border-style: solid;
-  border-width: .015px 0px .05px 0px;
-  border-color: rgb(219, 219, 219);
+  border-width: 0 0 1px 0;
+  border-color: rgba(219, 219, 219, 0.5);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 #top-navbar-logo {
-  width: 125px;
-  margin-left: 3em;
-  margin-top: .8em;
+  width: 200px;
+  margin: 0;
+  position: absolute;
+  left: 1em;
+  top: 0.7em;
 }
 
 #navbar-links-container {
-  float: right;
-  margin-right: 3em;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5em;
+  left: 10em;
+  padding: 0 2em;
 }
 
 #navbar-links-container a {
   text-decoration: none;
-  font-size: 14px;
-  padding-right: 15px;
-  padding-left: 15px;
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 40px;
+  transition: all 1s ease;
+}
+
+#navbar-links-container a:hover {
+  background-color: rgba(10, 105, 175, 0.15);
 }
 
 /* highlight link of current page */
 .onThisPage {
-  color: #B31B1B;
+  color: #A86D49;
   font-weight: bold;
 }
 
 .notOnThisPage {
-  color: black;
-  /* color: #777; */
-  font-weight: bold;
+  color: black;  font-weight: bold;
 }
 
 .notOnThisPage:hover {
-  color: #B31B1B;
+  color: #A86D49;
 }
 
 /* desktop bottom navbar */
 #bottom-navbar {
-  background-color: #F2F2F2;
+  background: linear-gradient(to bottom, #f4d03f, #e67e22);
   height: 225px;
   width: 100%;
   position: absolute;
   bottom: 0;
   border-style: solid;
   border-width: .1px 0px .1px 0px;
-  border-color: rgb(219, 219, 219);
-}
-
-#bottom-navbar a:hover {
-  color: black;
-}
-
-#waves-img {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
+  border-color: rgba(219, 219, 219, 0.3);
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 
 #bottom-navbar-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  padding: 2em;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#bottom-navbar a {
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#bottom-navbar a:hover {
+  color: #f4d03f;
 }
 
 .footer-heading {
   font-size: 20px;
   margin-top: 1.5em;
   font-weight: bold;
+  color: #fff;
 }
 
 .footer-text-container {
   font-size: 15px;
+  color: #fff;
 }
 
 #facebook-icon {
@@ -217,7 +233,6 @@ p {
 .contact-us-subheader {
   margin-top: 1em;
 }
-
 
 @media (max-width: 900px) {
   /* mobile top navbar */
