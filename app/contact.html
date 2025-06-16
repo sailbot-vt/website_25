@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sailbot | Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../images/logos/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.css">
+    <script defer src="../js/all.js"></script>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <script defer src="../js/contact.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="top-navbar">
+        <a href="index.html">
+          <img id="top-navbar-logo" src="../images/logos/textlogo.png"
+            alt="Sailbot Word Logo">
+        </a>
+        <div id="navbar-links-container">
+          <a class="notOnThisPage" href="index.html">About</a>
+          <a class="notOnThisPage" href="ourteam.html">Our Team</a>
+          <a class="notOnThisPage" href="fleet.html">Fleet</a>
+          <a class="notOnThisPage" href="gallery.html">Gallery</a>
+          <a class="onThisPage" href="contact.html">Contact Us</a>
+        </div>
+        <img id="hamburger-icon" class="navhidden"
+          src="../images/icons/Hamburger.svg" alt="hamburger icon">
+      </nav>
+      <nav class="navhidden" id="mobile-top-navbar">
+        <div id="mobile-navbar-links-container">
+          <a class="notOnThisPage" href="index.html">About</a>
+          <a class="notOnThisPage" href="ourteam.html">Our Team</a>
+          <a class="notOnThisPage" href="fleet.html">Fleet</a>
+          <a class="notOnThisPage" href="gallery.html">Gallery</a>
+          <a class="onThisPage" href="contact.html">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h3 id="page-header" class="section-header">Contact Us</h3>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h4>Get in Touch</h4>
+          <p>Have questions about our team or projects? We'd love to hear from you!</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <h5>Email</h5>
+              <a href="mailto:sailbot@vt.edu">sailbot@vt.edu</a>
+            </div>
+            <div class="contact-item">
+              <h5>Location</h5>
+              <p>Virginia Tech</p>
+              <p>Blacksburg, VA</p>
+            </div>
+            <div class="contact-item">
+              <h5>Follow Us</h5>
+              <a target="_blank" href="https://www.instagram.com/sailbotvt/">
+                Instagram
+                <img class="social-icon" src="../images/icons/instagram.svg" alt="Instagram Icon">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h4>Send us a Message</h4>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <nav id="bottom-navbar">
+        <div id="bottom-navbar-container">
+          <div id="follow-us">
+            <p class="footer-heading">Follow Us</p>
+            <div class="media-links footer-text-container">
+              <a target="_blank" href="https://www.instagram.com/sailbotvt/">
+                Instagram
+                <img id="instagram-icon" class="footer-icon"
+                  src="../images/icons/instagram.svg" alt="Instagram Icon">
+              </a>
+            </div>
+          </div>
+          <div id="contact-us">
+            <p id="contact-us-heading" class="footer-heading">Contact Us</p>
+            <div class="footer-text-container">
+              <p class="contact-us-subheader">General:</p>
+              <a target="_blank" href="mailto:sailbot@vt.edu">sailbot@vt.edu</a>
+            </div>
+          </div>
+        </div>
+        <a href="index.html"><img id="footer-logo"
+            src="../images/logos/footer-boat.png" alt="boat logo"></a>
+      </nav>
+    </footer>
+  </body>
+</html> 
