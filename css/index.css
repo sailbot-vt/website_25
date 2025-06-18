@@ -19,6 +19,27 @@ main {
   color: white;
 }
 
+
+#hero-image2 {
+  background: url(/images/gallery/13.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+#hero-image2 h1 {
+  padding-top: 10vh;
+  padding-left: 4%;
+  color: white;
+}
+
+#hero-image2 h2 {
+  padding-left: 4%;
+  color: white;
+}
+
+
+
+
 #videoDiv2 {
   width: 100%;
   margin: auto;
