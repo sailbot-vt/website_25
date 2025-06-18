@@ -5,7 +5,14 @@ main {
 #hero-image {
   background: url(/images/gallery/14.png);
   background-size: cover;
+  background-position: center;
   height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 #hero-image h1 {
@@ -23,7 +30,14 @@ main {
 #hero-image2 {
   background: url(/images/gallery/13.png);
   background-size: cover;
+  background-position: center;
   height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 #hero-image2 h1 {

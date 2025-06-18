@@ -5,13 +5,46 @@ body {
   min-height: 100vh;
   position: relative;
   padding-bottom: 50px;
+  background: linear-gradient(to bottom, rgb(172, 204, 255) 0%, #11455a 100%);
+  transition: background 0.5s ease;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 main {
   width: 100%;
   padding-bottom: 250px;
   margin-top: 8em;
-  background: linear-gradient(#f1f1f1 0%, #5999ff 80%);
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+}
+
+/* Add floating particles effect */
+.particle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 400;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+}
+
+.particle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 a {
@@ -142,28 +175,45 @@ p {
 
 /* desktop bottom navbar */
 #bottom-navbar {
-  height: 225px;
-  width: 100%;
+  background: linear-gradient(to bottom, #e6c88e, #d4b16a);
+  height: 50px;
   position: absolute;
   bottom: 0;
-  border-style: solid;
-  border-width: .1px 0px .1px 0px;
-  border-color: rgba(180, 147, 107, 0.4);
-  background-image: 
-    /* Sand texture pattern */
-    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.08' fill-rule='evenodd'%3E%3Ccircle cx='7' cy='7' r='1.5'/%3E%3Ccircle cx='27' cy='12' r='1'/%3E%3Ccircle cx='45' cy='8' r='1.2'/%3E%3Ccircle cx='15' cy='25' r='0.8'/%3E%3Ccircle cx='35' cy='30' r='1.3'/%3E%3Ccircle cx='52' cy='22' r='0.9'/%3E%3Ccircle cx='5' cy='40' r='1.1'/%3E%3Ccircle cx='25' cy='45' r='0.7'/%3E%3Ccircle cx='42' cy='47' r='1.4'/%3E%3Ccircle cx='18' cy='55' r='1'/%3E%3Ccircle cx='55' cy='52' r='0.8'/%3E%3Ccircle cx='12' cy='18' r='0.6'/%3E%3Ccircle cx='38' cy='15' r='0.9'/%3E%3Ccircle cx='8' cy='32' r='1.2'/%3E%3Ccircle cx='48' cy='35' r='0.7'/%3E%3Ccircle cx='22' cy='38' r='1.1'/%3E%3Ccircle cx='58' cy='40' r='0.8'/%3E%3Ccircle cx='3' cy='55' r='0.9'/%3E%3Ccircle cx='32' cy='58' r='1.3'/%3E%3Ccircle cx='50' cy='5' r='0.6'/%3E%3C/g%3E%3C/svg%3E"),
-    /* Subtle wave ripples */
-    url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q25 5 50 10 T100 10 V20 H0 Z' fill='%23ffffff' fill-opacity='0.03'/%3E%3C/svg%3E");
-  background-size: 60px 60px, 100px 20px;
-  background-position: 0 0, 0 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 
-    0 -2px 10px rgba(0, 0, 0, 0.2),
-    inset 0 2px 4px rgba(255, 255, 255, 0.1),
-    inset 0 -1px 2px rgba(139, 117, 84, 0.3);
-  
-  /* Add some texture variation */
-  position: relative;
-  background: linear-gradient(to bottom, #cfbaa040, #c4a37340, #b8915d40);
+      0 -2px 10px rgba(0, 0, 0, 0.2),
+      inset 0 2px 4px rgba(255, 255, 255, 0.1),
+      inset 0 -1px 2px rgba(139, 117, 84, 0.3);
+  clip-path: polygon(
+      0% 15%,
+      5% 12%,
+      10% 18%,
+      15% 12%,
+      20% 18%,
+      25% 12%,
+      30% 18%,
+      35% 12%,
+      40% 18%,
+      45% 12%,
+      50% 18%,
+      55% 12%,
+      60% 18%,
+      65% 12%,
+      70% 18%,
+      75% 12%,
+      80% 18%,
+      85% 12%,
+      90% 18%,
+      95% 12%,
+      100% 15%,
+      100% 100%,
+      0% 100%
+  );
+  overflow: hidden;
 }
 
 #bottom-navbar::before {
@@ -174,21 +224,76 @@ p {
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.03) 1.5px, transparent 1.5px),
-    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    radial-gradient(circle at 85% 20%, rgba(255, 255, 255, 0.06) 0.8px, transparent 0.8px);
-  background-size: 80px 80px, 120px 120px, 90px 90px, 110px 110px;
+      /* Random sand grains - multiple layers with different sizes and positions */
+      radial-gradient(circle at 15% 25%, rgba(255, 255, 255, 0.12) 2px, transparent 2px),
+      radial-gradient(circle at 45% 65%, rgba(255, 255, 255, 0.1) 1.5px, transparent 1.5px),
+      radial-gradient(circle at 75% 35%, rgba(255, 255, 255, 0.15) 2.5px, transparent 2.5px),
+      radial-gradient(circle at 25% 85%, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+      radial-gradient(circle at 85% 15%, rgba(255, 255, 255, 0.14) 2px, transparent 2px),
+      radial-gradient(circle at 55% 45%, rgba(255, 255, 255, 0.11) 1.8px, transparent 1.8px),
+      radial-gradient(circle at 35% 75%, rgba(255, 255, 255, 0.13) 2.2px, transparent 2.2px),
+      radial-gradient(circle at 65% 55%, rgba(255, 255, 255, 0.09) 1.2px, transparent 1.2px),
+      /* Sand waves */
+      repeating-linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.2) 0px,
+          rgba(0, 0, 0, 0.2) 1px,
+          transparent 1px,
+          transparent 3px
+      );
+  background-size: 
+      35px 35px,
+      45px 45px,
+      40px 40px,
+      50px 50px,
+      30px 30px,
+      55px 55px,
+      38px 38px,
+      42px 42px,
+      8px 8px;
+  background-position: 
+      0 0,
+      10px 5px,
+      -5px 10px,
+      15px -5px,
+      -10px 15px,
+      5px -10px,
+      -15px 5px,
+      10px -15px,
+      0 0;
+  opacity: 0.95;
+  mix-blend-mode: multiply;
+  clip-path: inherit;
+}
+
+#bottom-navbar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   pointer-events: none;
 }
 
+@keyframes shimmer {
+  0% {
+      background-position: 200% 0;
+  }
+  100% {
+      background-position: -200% 0;
+  }
+}
+
 #bottom-navbar-container {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  padding: 2em;
-  color: #fff;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2em;
 }
 
 #bottom-navbar a {
@@ -257,6 +362,14 @@ p {
 
 .contact-us-subheader {
   margin-top: 1em;
+}
+
+.sand-grain {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: overlay;
 }
 
 @media (max-width: 900px) {
