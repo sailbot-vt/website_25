@@ -81,6 +81,66 @@ function createBubbles() {
     }
 }
 
+// Create animated sand waves
+function createSandWaves() {
+    const bottomNavbar = document.getElementById('bottom-navbar');
+    if (!bottomNavbar) return;
+
+    // Remove existing wave element if it exists
+    const existingWave = bottomNavbar.querySelector('.sand-wave');
+    if (existingWave) existingWave.remove();
+
+    // Create wave element
+    const wave = document.createElement('div');
+    wave.className = 'sand-wave';
+    bottomNavbar.appendChild(wave);
+
+    // Animation variables
+    let time = 0;
+    const amplitude = 3; // Wave height
+    const frequency = 0.02; // Wave frequency
+    const speed = 0.05; // Animation speed
+
+    // Animation function
+    function animateWave() {
+        time += speed;
+        const points = [];
+        const segments = 20; // Number of Bezier curves
+
+        // Generate Bezier curve points
+        for (let i = 0; i <= segments; i++) {
+            const x = (i / segments) * 100;
+            const y = 15 + Math.sin(x * frequency + time) * amplitude;
+            
+            if (i === 0) {
+                // Start point
+                points.push(`M ${x}% ${y}%`);
+            } else {
+                // Control points and end point for each Bezier curve
+                const prevX = ((i - 1) / segments) * 100;
+                const prevY = 15 + Math.sin(prevX * frequency + time) * amplitude;
+                const cp1x = prevX + (x - prevX) * 0.5;
+                const cp1y = prevY;
+                const cp2x = prevX + (x - prevX) * 0.5;
+                const cp2y = y;
+                points.push(`C ${cp1x}% ${cp1y}%, ${cp2x}% ${cp2y}%, ${x}% ${y}%`);
+            }
+        }
+
+        // Add bottom corners to close the path
+        points.push('L 100% 100%');
+        points.push('L 0% 100%');
+        points.push('Z');
+
+        // Update wave shape
+        wave.style.clipPath = `path('${points.join(' ')}')`;
+        requestAnimationFrame(animateWave);
+    }
+
+    // Start animation
+    animateWave();
+}
+
 // Create random sand grains
 function createSandGrains() {
     const bottomNavbar = document.getElementById('bottom-navbar');
@@ -118,17 +178,20 @@ function createSandGrains() {
 // Initialize animations when the page loads
 window.addEventListener('load', () => {
     createBubbles();
+    createSandWaves();
     createSandGrains();
 });
 
 // Recreate animations when window is resized
 window.addEventListener('resize', () => {
     createBubbles();
+    createSandWaves();
     createSandGrains();
 });
 
 // Recreate animations periodically to ensure they're always present
 setInterval(() => {
     createBubbles();
+    createSandWaves();
     createSandGrains();
 }, 30000);
