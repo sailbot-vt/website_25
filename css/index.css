@@ -210,9 +210,10 @@ main {
   top: 70%;
   transform: translateY(-50%);
   width: 40%;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.5);
   padding: 2em;
   border-radius: 50px;
+  border: 2px solid #0d4d66;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
