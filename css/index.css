@@ -2,6 +2,56 @@ main {
   margin-top: 0em;
 }
 
+.fade-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.fade-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%; /* Adjust for fade height */
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 70%, rgba(255, 255, 255, 1) 100%);
+  pointer-events: none;
+}
+
+
+.fade-wrapper2 {
+  position: relative;
+  display: inline-block;
+}
+
+.fade-wrapper2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Adjust for fade height */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 80%, rgba(255, 255, 255, 1) 100%);
+  pointer-events: none;
+}
+
+.fade-wrapper3 {
+  position: relative;
+  display: inline-block;
+}
+
+.fade-wrapper3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Adjust for fade height */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 5%);
+  pointer-events: none;
+}
+
+
 #hero-image {
   background: url(/images/gallery/14.png);
   background-size: cover;
@@ -13,6 +63,7 @@ main {
   align-items: center;
   position: relative;
   z-index: 1;
+  background-blend-mode: overlay;
 }
 
 #hero-image h1 {
@@ -38,6 +89,7 @@ main {
   align-items: center;
   position: relative;
   z-index: 1;
+  background-blend-mode: overlay;
 }
 
 #hero-image2 h1 {
