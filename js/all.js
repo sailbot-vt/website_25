@@ -137,25 +137,34 @@ function createSandGrains() {
     existingGrains.forEach(grain => grain.remove());
 
     // Create new sand grains
-    const grainCount = 100; // Number of sand grains
+    const grainCount = 200; // Increased number of grains
     for (let i = 0; i < grainCount; i++) {
         const grain = document.createElement('div');
         grain.className = 'sand-grain';
         
-        // Random size between 1 and 3 pixels
-        const size = Math.random() * 2 + 1;
+        // Random size between 0.5 and 4 pixels for more variety
+        const size = Math.random() * 3.5 + 0.5;
         grain.style.width = `${size}px`;
         grain.style.height = `${size}px`;
         
-        // Random position
+        // Random position with better distribution
         grain.style.left = `${Math.random() * 100}%`;
         grain.style.top = `${Math.random() * 100}%`;
         
-        // Random opacity
-        grain.style.opacity = (Math.random() * 0.1 + 0.05).toString();
+        // Random opacity for depth
+        grain.style.opacity = (Math.random() * 0.15 + 0.05).toString();
         
         // Random rotation
         grain.style.transform = `rotate(${Math.random() * 360}deg)`;
+        
+        // Random shape (some grains are more oval)
+        if (Math.random() > 0.7) {
+            grain.style.borderRadius = '25%';
+        }
+        
+        // Random color variation
+        const colorVariation = Math.random() * 0.2 + 0.8;
+        grain.style.background = `rgba(255, 255, 255, ${0.3 * colorVariation})`;
         
         bottomNavbar.appendChild(grain);
     }

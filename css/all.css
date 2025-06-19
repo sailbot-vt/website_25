@@ -481,6 +481,8 @@ p {
   border-radius: 50%;
   pointer-events: none;
   mix-blend-mode: overlay;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.2);
+  will-change: transform;
 }
 
 @media (max-width: 900px) {
@@ -626,4 +628,46 @@ p {
   #follow-us {
     margin-left: 20em;
   }
+}
+
+.navbar-decoration {
+  position: absolute;
+  bottom: 50px;
+  z-index: 1001;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+  background: transparent;
+  mix-blend-mode: normal;
+}
+
+.navbar-decoration:hover {
+  transform: scale(1.1) rotate(5deg);
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
+}
+
+#enchanted-book {
+  top: 10%;
+  left: 90%;
+  transform: rotate(-15deg);
+}
+
+#chest {
+  top: 30%;
+  left: 25%;
+  transform: rotate(10deg);
+}
+
+#pineapple {
+  top: 20%;
+  left: 10%;
+  transform: rotate(-10deg);
+}
+
+#shell1 {
+  top: 15%;
+  left: 55%;
+  transform: rotate(20deg);
 }
