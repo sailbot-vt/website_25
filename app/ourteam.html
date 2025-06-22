@@ -16,6 +16,7 @@
     <script defer src="../js/all.js"></script>
     <link rel="stylesheet" href="../css/ourteam.css" />
     <link rel="stylesheet" href="../css/animations.css" />
+    <script defer src="../js/ourteam.js"></script>
   </head>
 
 
@@ -50,12 +51,30 @@
             <h3 class="subteam-title">Software</h3>
             <p class="subteam-description">
               The Software subteam develops the autonomous navigation systems, computer vision algorithms, 
-              and control software that enable our boats to sail independently. We work with Python, C++, 
-              ROS (Robot Operating System), and various computer vision frameworks to create an intelligent 
+              and control software that enable our boats to sail and navigate independently. We work with Python, C++, 
+              ROS (Robot Operating System), Gazebo, YOLO, and Docker to create an intelligent 
               autopilot software package. We also develop custom groundstation software
               to control and monitor our boats from the shore, and we maintain and work on the codebase for our website. 
-              We are looking for competent full stack software engineers who are interested in working on autonomous systems!
+              We are looking for competent full stack software engineers who are interested in working on autonomous systems! 
+              If you would like to check out some of our code, most of it is open source! and is available on our <a href="https://github.com/sailbot-vt/sailbot_vt">GitHub</a>.
             </p>
+          </div>
+          
+          <div class="subteam-images-section" id="software-images">
+            <div class="subteam-images">
+              <div class="image-container">
+                <img src="../images/our_team_images/software/computer_vision1.png" alt="Computer Vision System" class="subteam-image">
+              </div>
+              <div class="image-container">
+                <img src="../images/our_team_images/software/groundstation.png" alt="Ground Station Software" class="subteam-image">
+              </div>
+              <div class="image-container">
+                <img src="../images/our_team_images/software/computer_vision2.png" alt="Computer Vision Analysis" class="subteam-image">
+              </div>
+              <div class="image-container">
+                <img src="../images/our_team_images/software/simulation.png" alt="Simulation Environment" class="subteam-image">
+              </div>
+            </div>
           </div>
 
           <div class="subteam-box" id="electronics-box">
@@ -67,6 +86,12 @@
               navigation and propulsion systems.
             </p>
           </div>
+          
+          <div class="subteam-images-section" id="electronics-images">
+            <div class="subteam-images">
+              <!-- Electronics images will be added when available -->
+            </div>
+          </div>
 
           <div class="subteam-box" id="naval-architecture-box">
             <h3 class="subteam-title">Naval Architecture</h3>
@@ -75,6 +100,14 @@
               engineering. We use CAD software and computational fluid dynamics to optimize our boat 
               designs for performance, stability, and efficiency in various water conditions.
             </p>
+          </div>
+          
+          <div class="subteam-images-section" id="navarch-images">
+            <div class="subteam-images">
+              <div class="image-container">
+                <img src="../images/our_team_images/navarch/michio_spray_paint.png" alt="Hull Design and Construction" class="subteam-image">
+              </div>
+            </div>
           </div>
 
           <div class="subteam-box" id="mechanical-box">
@@ -85,6 +118,12 @@
               ensuring our boats are robust and capable of handling the demands of autonomous operation.
             </p>
           </div>
+          
+          <div class="subteam-images-section" id="mechanical-images">
+            <div class="subteam-images">
+              <!-- Mechanical images will be added when available -->
+            </div>
+          </div>
 
           <div class="subteam-box" id="sail-box">
             <h3 class="subteam-title">Sail</h3>
@@ -93,6 +132,14 @@
               We work on optimizing sail shapes, developing automated sail trimming systems, and 
               ensuring our boats can harness wind power effectively for autonomous sailing.
             </p>
+          </div>
+          
+          <div class="subteam-images-section" id="sail-images">
+            <div class="subteam-images">
+              <div class="image-container">
+                <img src="../images/our_team_images/sail/michio_sail.png" alt="Sail Design and Testing" class="subteam-image">
+              </div>
+            </div>
           </div>
 
           <div class="subteam-box" id="marketing-finances-box">
@@ -103,9 +150,24 @@
               manage team finances, and promote AutoBoat's mission and achievements to the broader community.
             </p>
           </div>
+          
+          <div class="subteam-images-section" id="marketing-finances-images">
+            <div class="subteam-images">
+              <!-- Marketing & Finances images will be added when available -->
+            </div>
+          </div>
         </div>
 
       </main>
+      
+      <!-- Image Modal -->
+      <div id="imageModal" class="image-modal">
+        <div class="modal-content">
+          <button class="close-modal">&times;</button>
+          <img id="modalImage" class="modal-image" src="" alt="Expanded Image">
+        </div>
+      </div>
+      
       <footer>
 
       <img src="../images/background_images/pineapple.png" alt="Pineapple" class="floating-pineapple" id="pineapple">
