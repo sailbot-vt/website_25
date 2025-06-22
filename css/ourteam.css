@@ -94,4 +94,63 @@ h4 {
     width: 80%;
   }
 
+  .subteam-box {
+    width: 85%;
+    padding: 1.5em;
+  }
+
+  .subteam-title {
+    font-size: 1.5em;
+  }
+
+  .subteam-box .subteam-description {
+    font-size: 1em;
+  }
+
+  #subteams-header {
+    font-size: 2em;
+  }
+
+}
+
+#subteams-section {
+  width: 100%;
+  margin: 3em auto;
+  text-align: center;
+}
+
+#subteams-header {
+  font-size: 2.5em;
+  margin-bottom: 2em;
+  color: #0d4d66;
+}
+
+.subteam-box {
+  width: 60%;
+  max-width: 800px;
+  margin: 2em auto;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 2em;
+  border-radius: 50px;
+  border: 2px solid #0d4d66;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.subteam-title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  color: #0d4d66;
+  font-weight: 700;
+}
+
+.subteam-box .subteam-description {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #0d4d66;
+  margin: 0;
+  width: 100%;
 }
