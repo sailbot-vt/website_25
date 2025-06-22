@@ -226,10 +226,10 @@ p {
 
 /* desktop bottom navbar */
 #bottom-navbar {
-  background: linear-gradient(to bottom, #e6c88e, #d4b16a);
+  background: linear-gradient(to bottom, #ebdbbb, #a88030);
   height: 50px;
   position: absolute;
-  bottom: 0;
+  bottom: -40px;
   width: 100%;
   z-index: 999999;
   display: flex;
@@ -324,7 +324,6 @@ p {
     100% 100%,
     0% 100%
   );
-  overflow: hidden;
 }
 
 #bottom-navbar::before {
@@ -648,26 +647,47 @@ p {
   filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
 }
 
-#enchanted-book {
-  top: 10%;
-  left: 90%;
-  transform: rotate(-15deg);
-}
 
-#chest {
-  top: 30%;
-  left: 25%;
-  transform: rotate(10deg);
-}
-
-#pineapple {
-  top: 20%;
+.floating-pineapple {
+  position: absolute;
+  bottom: 140px;
   left: 10%;
-  transform: rotate(-10deg);
+  z-index: 9999999;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transform: rotate(-25deg) scale(1.2);
+  pointer-events: none;
 }
 
-#shell1 {
-  top: 15%;
-  left: 55%;
-  transform: rotate(20deg);
+
+
+.floating-chest {
+  position: absolute;
+  bottom: 140px;
+  left: 30%;
+  z-index: 9999999;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transform: rotate(0deg) scale(1.2);
+  pointer-events: none;
 }
+
+
+
+.floating-enchanted-book {
+  position: absolute;
+  bottom: 140px;
+  left: 80%;
+  z-index: 9999999;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transform: rotate(20deg) scale(1.2);
+  pointer-events: none;
+}
+
+
+
+
