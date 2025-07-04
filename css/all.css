@@ -772,7 +772,7 @@ p {
   #title {
     max-width: 95vw;
     width: 95vw;
-    font-size: 1em;
+    font-size: 0.85em;
     padding: 1em 0.5em;
   }
   #about-us-box, #description-box{
