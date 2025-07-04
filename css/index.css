@@ -66,16 +66,6 @@ main {
   background-blend-mode: overlay;
 }
 
-#hero-image h1 {
-  padding-top: -10vh;
-  padding-left: 4%;
-  color: white;
-}
-
-#hero-image h2 {
-  padding-left: 4%;
-  color: white;
-}
 
 
 #hero-image2 {
@@ -105,40 +95,26 @@ main {
 
 
 
-
-#videoDiv2 {
-  width: 100%;
-  margin: auto;
-  display: block;
-  position: relative;
-  background-color: black;
-  background-size: cover;
-  top: 55px
-}
-
-/* This has been changed */
-#video2 {
-  width: 100%;
-  height: auto;
-  opacity: 0.8
-}
-
 #title {
   width: 100%;
   margin: auto;
   position: absolute;
-  color: black;
-  z-index: 12;
+  color: white;
+  z-index: 1002;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 #title h1 {
   font-size: 80px;
-  margin-top: -35vh;
+  margin-top: -70vh;
   padding-left: 2%;
+  text-align: center;
 }
 
 #title h2 {
-  padding-left: 30%;
+  padding-left: 0%;
 }
 
 .section-description {
@@ -173,10 +149,10 @@ main {
 
 #about-us-box {
   position: absolute;
-  left: 3%;
-  top: 35em;
+  left: 2%;
+  top: 30em;
   transform: translateY(-50%);
-  width: 40%;
+  width: 45%;
   background: rgba(255, 255, 255, 0.5);
   padding: 2em;
   border-radius: 50px;
@@ -310,43 +286,23 @@ main {
 
 
 @media (max-width: 700px) {
-  #goals-container {
-    width: 85%;
-    margin-left: 5%;
-  }
-
   #title {
-    padding-top: 30%;
+    padding-top: 0;
     text-align: center;
-    color: black;
+    color: white;
   }
-
   #title h1 {
+    font-size: 2em;
+    margin-top: -70vh;
+    padding: 0;
     text-align: center;
-    padding: 0;
-    font-size: 40px;
   }
-
   #title h2 {
+    font-size: 1.2em;
     padding: 0;
-    font-size: 20px;
   }
-
-  #videoDiv2 {
-    background: url(../images/index/drone-boat.jpg);
-    background-size: cover;
-    height: 100vh;
-    z-index: 10;
-    top: 0;
-  }
-
-  #video2 {
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-  }
-
 }
+
 
 @media (max-width: 620px) {
 

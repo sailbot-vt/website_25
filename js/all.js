@@ -190,3 +190,30 @@ setInterval(() => {
     createSandWaves();
     createSandGrains();
 }, 30000);
+
+const hamburgerIcon = document.getElementById("hamburger-icon");
+
+function checkMobileMenu() {
+  if (window.innerWidth <= 750) {
+    hamburgerIcon.style.display = "block";
+    if (!mobileIsDisplayed) {
+      mobileTopNavbar.classList.add("navhidden");
+    }
+  } else {
+    hamburgerIcon.style.display = "none";
+    mobileTopNavbar.classList.add("navhidden");
+    mobileIsDisplayed = false;
+  }
+}
+
+hamburgerIcon.addEventListener("click", function () {
+  mobileIsDisplayed = !mobileIsDisplayed;
+  if (mobileIsDisplayed) {
+    mobileTopNavbar.classList.remove("navhidden");
+  } else {
+    mobileTopNavbar.classList.add("navhidden");
+  }
+});
+
+window.addEventListener("resize", checkMobileMenu);
+window.addEventListener("DOMContentLoaded", checkMobileMenu);

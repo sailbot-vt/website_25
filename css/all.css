@@ -691,3 +691,85 @@ p {
 
 
 
+
+#hamburger-icon {
+  display: none;
+  position: absolute;
+  right: 1em;
+  top: 1.5em;
+  z-index: 1001;
+  background: none;
+  border: none;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+#hero-image, #hero-image2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#about-us-box, #description-box {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  padding: 1.5em 1em;
+  border-radius: 16px;
+  max-width: 90vw;
+  width: 90vw;
+  z-index: 2;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+  font-size: 1.1em;
+}
+
+#title {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  width: 90vw;
+  background: rgba(0,0,0,0.25);
+  border-radius: 12px;
+  padding: 0.5em 0.5em;
+}
+
+@media (max-width: 750px) {
+  html, body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 2em !important;
+  }
+  h2 {
+    font-size: 1.2em !important;
+  }
+  h3 {
+    font-size: 1.1em !important;
+  }
+  h4 {
+    font-size: 1em !important;
+  }
+  h5, h5b {
+    font-size: 0.95em !important;
+  }
+  p, .section-description, .join-description, .subteam-description {
+    font-size: 0.98em !important;
+  }
+}
+
+
+
+
