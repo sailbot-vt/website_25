@@ -770,7 +770,7 @@ p {
   }
   #about-us-box, #description-box, #title {
     max-width: 95vw;
-    width: 95vw;
+    width: 120vw;
     font-size: 1em;
     padding: 1em 0.5em;
   }
