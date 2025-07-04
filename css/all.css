@@ -523,7 +523,10 @@ p {
   /* mobile top navbar */
   #mobile-top-navbar {
     background-color: #F2F2F2;
-    height: 295px;
+    height: auto;
+    min-height: 0;
+    max-height: 80vh;
+    overflow-y: auto;
   }
 
   main {
