@@ -289,7 +289,7 @@ main {
 
 @media (max-width: 700px) {
   #hero-image {
-    background-position: 90% center;
+    background-position: 80% center;
   }
   #title {
     padding-top: 0;
