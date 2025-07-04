@@ -768,7 +768,14 @@ p {
   p, .section-description, .join-description, .subteam-description {
     font-size: 0.98em !important;
   }
-  #about-us-box, #description-box, #title {
+
+  #title {
+    max-width: 95vw;
+    width: 95vw;
+    font-size: 1em;
+    padding: 1em 0.5em;
+  }
+  #about-us-box, #description-box{
     max-width: 95vw;
     width: 120vw;
     font-size: 1em;
