@@ -20,7 +20,7 @@ setInterval(() => {
       newRandomIndex = getRndInteger(0,41)
       newPhoto = document.createElement('img')
       newPhoto.id = hiddenPhotosIds[newRandomIndex]
-      newPhoto.setAttribute("src", `../images/gallery/${hiddenPhotosIds[newRandomIndex]}.jpg`)
+      newPhoto.setAttribute("src", `../images/gallery/${hiddenPhotosIds[newRandomIndex]}.webp`)
       newPhoto.classList.add("fade-in")
       hiddenPhotosIds.splice(newRandomIndex, 1)
       hiddenPhotosIds.push(displayedIds[randomIndex])
@@ -45,7 +45,7 @@ setInterval(() => {
       newRandomIndex = getRndInteger(0,41)
       newPhoto = document.createElement('img')
       newPhoto.id = hiddenPhotosIds[newRandomIndex]
-      newPhoto.setAttribute("src", `../images/gallery/${hiddenPhotosIds[newRandomIndex]}.jpg`)
+      newPhoto.setAttribute("src", `../images/gallery/${hiddenPhotosIds[newRandomIndex]}.webp`)
       newPhoto.classList.add("fade-in")
       hiddenPhotosIds.splice(newRandomIndex, 1)
       hiddenPhotosIds.push(displayedIds[randomIndex])
