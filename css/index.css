@@ -316,15 +316,6 @@ main {
     width: 85%;
   }
 
-  #metrics-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #metrics-container div {
-    margin-bottom: 1.5em;
-  }
-
   #images-container {
     margin-top: 1.5em;
   }
@@ -334,36 +325,8 @@ main {
     margin-bottom: 2em;
   }
 
-  #goals-container {
-    width: 97%;
-    justify-content: center;
-    margin-left: 0%;
-  }
-
   main {
     margin-bottom: 10em;
-  }
-
-  #goals-container img {
-    height: 40em;
-    margin-right: -1.75em;
-    margin-left: -1.75em;
-  }
-
-  #current-goal {
-    margin-top: 3.5em;
-  }
-
-  #cayuga-description {
-    height: 12.5em;
-  }
-
-  #ocean-description {
-    height: 11.1em;
-  }
-
-  #goals-container h4 {
-    margin-bottom: 0em;
   }
 
   #description-container {
@@ -373,11 +336,5 @@ main {
 
   #description-container h4 {
     font-size: 20px;
-  }
-}
-
-@media (min-width: 1500px) {
-  #goals-container {
-    margin-left: 20em;
   }
 }
