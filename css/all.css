@@ -427,21 +427,6 @@ p {
   color: #fff;
 }
 
-#facebook-icon {
-  margin-left: 1em;
-}
-
-#instagram-icon {
-  margin-left: .73em;
-}
-
-#linkedin-icon {
-  margin-left: 1.5em;
-}
-
-#youtube-icon {
-  margin-left: 1.56em;
-}
 
 #footer-logo {
   width: 8em;
@@ -466,13 +451,6 @@ p {
   width: 1em;
 }
 
-#contact-us {
-  width: 10em;
-}
-
-.contact-us-subheader {
-  margin-top: 1em;
-}
 
 .sand-grain {
   position: absolute;
